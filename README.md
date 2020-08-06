@@ -1,4 +1,4 @@
-#Rate My Wedding Venue
+# Rate My Wedding Venue
 
 https://still-inlet-30675.herokuapp.com/
 
