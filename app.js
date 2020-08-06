@@ -68,10 +68,9 @@ passport.deserializeUser(function(id, done) {
 passport.use(new GoogleStrategy({
     clientID: process.env.GOOGLE_CLIENT_ID,
     clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-    callbackURL: "http://localhost:5000/auth/google/mywedding"
+    callbackURL: "https://still-inlet-30675.herokuapp.com/auth/google/mywedding"
   },
   function(accessToken, refreshToken, profile, cb) {
-    // console.log(profile);
     User.findOrCreate({
       googleId: profile.id,
       username: profile.id
