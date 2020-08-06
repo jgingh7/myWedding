@@ -1,0 +1,204 @@
+<%- include('partials/header'); -%>
+<%- include('partials/main-navbar'); -%>
+
+<body>
+  <div class="container">
+    <header class="blog-header py-3"></header>
+
+    <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
+      <div class="col-md-12 px-0">
+        <h1 class="display-4 font-italic venue-title"><%= venue.name %> </h1>
+        <h2 class="font-italic text-muted venue-title"><%= venue.nameEng %></h2>
+        <p class="lead my-3"><%= venue.address.doshi %> <%= venue.address.shigungu %> <%= venue.address.rest %></p>
+        <p class="lead my-3"><i class="fas fa-phone fa-1x"></i> <%= venue.tel %></p>
+        <p class="lead my-3"><a href="<%= venue.homepage %>" target="_blank">홈페이지</a></p>
+        <p class="lead mb-0 text-muted font-weight-bold"><%= venue.type %></p>
+      </div>
+    </div>
+
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">신랑신부</strong>
+            <div class="container to-detail-button" id="front-btn">
+              <a href="#">자세히</a>
+            </div>
+            <div class="container to-detail-button" id="back-btn">
+              <a href="#">글쓰기</a>
+            </div>
+            <table class="venue-main-rating">
+              <tr>
+                <td class="rate-category-front">클래식</td>
+                <td class="rate-category-middle">
+                  <div id="progressbar">
+                    <div class="the-bar"></div>
+                  </div>
+                </td>
+                <td class="rate-category-back">모던함</td>
+              </tr>
+              <tr>
+                <td class="rate-category-front">천고 높음</td>
+                <td class="rate-category-middle">
+                  <div id="progressbar">
+                    <div class="the-bar"></div>
+                  </div>
+                </td>
+                <td class="rate-category-back">낮음</td>
+              </tr>
+              <tr>
+                <td class="rate-category-front">친절함</td>
+                <td class="rate-category-middle">
+                  <div id="progressbar">
+                    <div class="the-bar"></div>
+                  </div>
+                </td>
+                <td class="rate-category-back">불친절함</td>
+              </tr>
+              <tr>
+                <td class="rate-category-front">어두움</td>
+                <td class="rate-category-middle">
+                  <div id="progressbar">
+                    <div class="the-bar"></div>
+                  </div>
+                </td>
+                <td class="rate-category-back">밝음</td>
+              </tr>
+              <tr>
+                <td class="rate-category-front">북적임</td>
+                <td class="rate-category-middle">
+                  <div id="progressbar">
+                    <div class="the-bar"></div>
+                  </div>
+                </td>
+                <td class="rate-category-back">한가함</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success">예비부부</strong>
+            <div class="container to-detail-button" id="front-btn">
+              <a href="#">자세히</a>
+            </div>
+            <div class="container to-detail-button" id="back-btn">
+              <a href="#">글쓰기</a>
+            </div>
+            <table class="venue-main-rating">
+              <tr>
+                <td class="rate-category-front">클래식</td>
+                <td class="rate-category-middle">
+                  <div id="progressbar">
+                    <div class="the-bar"></div>
+                  </div>
+                </td>
+                <td class="rate-category-back">모던함</td>
+              </tr>
+              <tr>
+                <td class="rate-category-front">천고 높음</td>
+                <td class="rate-category-middle">
+                  <div id="progressbar">
+                    <div class="the-bar"></div>
+                  </div>
+                </td>
+                <td class="rate-category-back">낮음</td>
+              </tr>
+              <tr>
+                <td class="rate-category-front">친절함</td>
+                <td class="rate-category-middle">
+                  <div id="progressbar">
+                    <div class="the-bar"></div>
+                  </div>
+                </td>
+                <td class="rate-category-back">불친절함</td>
+              </tr>
+              <tr>
+                <td class="rate-category-front">어두움</td>
+                <td class="rate-category-middle">
+                  <div id="progressbar">
+                    <div class="the-bar"></div>
+                  </div>
+                </td>
+                <td class="rate-category-back">밝음</td>
+              </tr>
+              <tr>
+                <td class="rate-category-front">북적임</td>
+                <td class="rate-category-middle">
+                  <div id="progressbar">
+                    <div class="the-bar"></div>
+                  </div>
+                </td>
+                <td class="rate-category-back">한가함</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success">하객</strong>
+            <div class="container to-detail-button" id="front-btn">
+              <a href="#">자세히</a>
+            </div>
+            <div class="container to-detail-button" id="back-btn">
+              <a href="#">글쓰기</a>
+            </div>
+            <table class="venue-main-rating">
+              <tr>
+                <td class="rate-category-front">클래식</td>
+                <td class="rate-category-middle">
+                  <div id="progressbar">
+                    <div class="the-bar"></div>
+                  </div>
+                </td>
+                <td class="rate-category-back">모던함</td>
+              </tr>
+              <tr>
+                <td class="rate-category-front">천고 높음</td>
+                <td class="rate-category-middle">
+                  <div id="progressbar">
+                    <div class="the-bar"></div>
+                  </div>
+                </td>
+                <td class="rate-category-back">낮음</td>
+              </tr>
+              <tr>
+                <td class="rate-category-front">친절함</td>
+                <td class="rate-category-middle">
+                  <div id="progressbar">
+                    <div class="the-bar"></div>
+                  </div>
+                </td>
+                <td class="rate-category-back">불친절함</td>
+              </tr>
+              <tr>
+                <td class="rate-category-front">어두움</td>
+                <td class="rate-category-middle">
+                  <div id="progressbar">
+                    <div class="the-bar"></div>
+                  </div>
+                </td>
+                <td class="rate-category-back">밝음</td>
+              </tr>
+              <tr>
+                <td class="rate-category-front">북적임</td>
+                <td class="rate-category-middle">
+                  <div id="progressbar">
+                    <div class="the-bar"></div>
+                  </div>
+                </td>
+                <td class="rate-category-back">한가함</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+<%- include('partials/footer'); -%>

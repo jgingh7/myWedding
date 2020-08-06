@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Jekyll v4.0.1">
+  <title>Rate my Wedding Venue</title>
+  <link rel="icon" type="image/png" href="images/icon.png" />
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/sign-in/">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" href="/docs/4.5/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+  <link rel="icon" href="/docs/4.5/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="/docs/4.5/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+  <link rel="manifest" href="/docs/4.5/assets/img/favicons/manifest.json">
+  <link rel="mask-icon" href="/docs/4.5/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+  <link rel="icon" href="/docs/4.5/assets/img/favicons/favicon.ico">
+  <meta name="msapplication-config" content="/docs/4.5/assets/img/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#563d7c">
+
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+  <!-- Custom styles for this template -->
+  <link href="css/sign.css" rel="stylesheet">
+</head>
+
+<body class="text-center">
+  <form action="/register" class="form-signin" method="POST">
+    <img class="mb-4" src="images/icon.png" alt="" width="100" height="100">
+    <h1 class="h3 mb-3 font-weight-normal">회원가입</h1>
+    <div class="card">
+      <div class="card-body">
+        <a class="btn btn-block login-btn" href="/auth/google" role="button">
+          <img class="login-icon" src="images/768px-Google__G__Logo.svg.png" alt="google-icon.png">
+          구글 계정으로 가입
+        </a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <a class="btn btn-block login-btn" href="/auth/google" role="button">
+          <img class="login-icon" src="images/naverIcon_White.png" alt="naver-icon.png">
+          네이버 계정으로 가입
+        </a>
+      </div>
+    </div>
+    <hr>
+    <input type="email" id="inputEmail top" class="form-control" name="username" placeholder="이메일 (Email)" required autofocus>
+    <input type="password" id="inputPassword bottom" class="form-control" name="password" placeholder="비밀번호 (Password)" required>
+    <button class="btn btn-lg btn-dark btn-block" type="submit">가입하기</button>
+    <p class="mt-5 mb-3 text-muted">&copy; 2020 Jin Lee</p>
+  </form>
+</body>
+
+</html>

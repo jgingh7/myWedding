@@ -1,0 +1,50 @@
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container">
+    <a class="navbar-brand" href="/">Rate my Wedding Venue</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            베뉴 찾기
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/location/seoul" value="locationName">서울</a>
+            <a class="dropdown-item" href="/location/busan" name="locationName">부산</a>
+            <a class="dropdown-item" href="/location/incheon" name="locationName">인천</a>
+            <a class="dropdown-item" href="/location/daegu" name="locationName">대구</a>
+            <a class="dropdown-item" href="/location/daejeon" name="locationName">대전</a>
+            <a class="dropdown-item" href="/location/gwangju" name="locationName">광주</a>
+            <a class="dropdown-item" href="/location/ulsan" name="locationName">울산</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="/location/gyeonggi-do" name="locationName">경기도</a>
+            <a class="dropdown-item" href="/location/gyeongsang-do" name="locationName">경상도</a>
+            <a class="dropdown-item" href="/location/chungcheong-do" name="locationName">충청도</a>
+          </div>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <% if (loggedIn) { %>
+        <li class="nav-item dropdown" id="myAccountBtn">
+          <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            내 계정
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <p><%= username %>님</p>
+            <a class="btn btn-light btn-lg" href="/logout" role="button">Log Out</a>
+          </div>
+        </li>
+        <% } else { %>
+        <a class="btn btn-light my-2 my-sm-0 navregister" type="submit" href="/register">회원가입</a>
+        <a class="btn btn-light my-2 my-sm-0" type="submit" href="/login">로그인</a>
+        <% } %>
+      </form>
+    </div>
+  </div>
+</nav>

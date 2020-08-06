@@ -1,0 +1,235 @@
+.homePage {
+  background-image: url("../images/KakaoTalk_20200722_204243875.jpg");
+  background-size: cover;
+  height: inherit;
+}
+
+.container-homePage {
+  color: #fff;
+  margin: 0;
+  position: absolute;
+  top: 40%;
+  text-align: center;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+}
+
+footer p {
+  margin-top: 25px;
+  font-size: 12px;
+  color: rgb(195, 195, 195);
+}
+
+.homePage .display-3 {
+  /* font-family: 'Nanum Gothic', sans-serif; */
+  font-family: 'Nanum Myeongjo', serif;
+}
+
+.homePage .lead {
+  font-family: 'Nanum Myeongjo', serif;
+}
+
+.navbar {
+  background-color: #0abab5;
+}
+.navbar-light .navbar-brand {
+  color: #FFF;
+}
+
+#myAccountBtn {
+  list-style-type: none;
+}
+
+.introduce-text {
+  font-family: 'Nanum Gothic', serif;
+  text-align: center;
+  font-size: 25px;
+}
+
+.introduce-container {
+  margin-top: 100px;
+}
+.introduce-saying {
+  margin-top: 150px;
+
+  text-align: right;
+  background-color: #0abab5;
+  color: #FFF;
+  padding: 50px 100px 30px;
+  border-radius: 20px;
+}
+.introduce-saying h3 {
+  font-size: 20px;
+}
+
+/* location */
+.themed-grid-col {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: rgba(86, 61, 124, .15);
+  border: 1px solid rgba(86, 61, 124, .2);
+  text-align: center;
+}
+
+/* Venue main */
+/* stylelint-disable selector-list-comma-newline-after */
+
+.blog-header {
+  line-height: 1;
+}
+
+.display-4 {
+  font-size: 2.5rem;
+}
+@media (min-width: 768px) {
+  .display-4 {
+    font-size: 3rem;
+  }
+}
+
+.venue-title {
+  display: inline;
+}
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.nav-scroller .nav-link {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: .875rem;
+}
+
+.navregister {
+  margin-right: 5px;
+}
+
+.card-img-right {
+  height: 100%;
+  border-radius: 0 3px 3px 0;
+}
+
+.flex-auto {
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.h-250 { height: 250px; }
+@media (min-width: 768px) {
+  .h-md-250 { height: 250px; }
+}
+
+/* Pagination */
+.blog-pagination {
+  margin-bottom: 4rem;
+}
+.blog-pagination > .btn {
+  border-radius: 2rem;
+}
+
+/*
+ * Blog posts
+ */
+.blog-post {
+  margin-bottom: 4rem;
+}
+.blog-post-title {
+  margin-bottom: .25rem;
+  font-size: 2.5rem;
+}
+.blog-post-meta {
+  margin-bottom: 1.25rem;
+  color: #999;
+}
+
+/*
+ * Footer
+ */
+.blog-footer {
+  padding: 2.5rem 0;
+  color: #999;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: .05rem solid #e5e5e5;
+}
+.blog-footer p:last-child {
+  margin-bottom: 0;
+}
+
+.venue-main-rating {
+  margin: 20px 10px;
+}
+
+.to-detail-button {
+  position: absolute;
+  text-align: right;
+  width: 15%;
+  height: 10%;
+  background-color: rgba(10, 186, 181, 0.6);
+  border-radius: 5px;
+}
+
+#front-btn {
+  position: absolute;
+  right: 20%;
+}
+
+#back-btn {
+  position: absolute;
+  right: 3%;
+}
+
+#progressbar {
+  background-color: rgb(244, 201, 136);
+  width: 100%;
+}
+
+#progressbar .the-bar {
+  background-color: rgb(139, 208, 241);
+  border-style: solid;
+  border-width: 0 3px 0 0;
+  border-color: rgb(53, 58, 63);
+  width: 20%;
+  /* Adjust with JavaScript */
+  height: 20px;
+}
+
+.rate-category-front {
+  width: 30%;
+  text-align: right;
+}
+
+.rate-category-back {
+  width: 30%;
+  text-align: left;
+}
+
+.rate-category-middle {
+  text-align: center;
+  padding: 5px;
+}

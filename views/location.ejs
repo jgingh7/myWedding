@@ -1,0 +1,13 @@
+<%- include('partials/header'); -%>
+<%- include('partials/main-navbar'); -%>
+<body>
+  <div class="container">
+    <div class="row mb-3">
+      <% venues.forEach(function(venue){ %>
+        <a class="col-md-4 themed-grid-col" href="/venue-main/<%=venue.url%>"><%= venue.name %></a>
+      <% }) %>
+    </div>
+  </div>
+</body>
+
+<%- include('partials/footer'); -%>

@@ -1,0 +1,26 @@
+<%- include('partials/header'); -%>
+
+<body class="homePage">
+
+  <div class="container container-homePage">
+    <h1 class="display-3">Rate my Wedding Venue</h1>
+
+    <p class="lead">최고의 순간을 위해</p>
+    <hr>
+    <a class="btn btn-outline-secondary btn-lg" href="about" role="button">둘러보기</a>
+    <% if (loggedIn) { %>
+    <a class="btn btn-outline-secondary btn-lg" href="logout" role="button">로그아웃</a>
+    <% } else { %>
+    <a class="btn btn-outline-secondary btn-lg" href="register" role="button">회원가입</a>
+    <a class="btn btn-outline-secondary btn-lg" href="login" role="button">로그인</a>
+    <% } %>
+  </div>
+
+</body>
+
+
+
+
+
+
+<%- include('partials/footer'); -%>
